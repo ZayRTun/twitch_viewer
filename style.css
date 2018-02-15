@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: lightblue;
+}
+.container {
+  margin: 0 auto;
+  font-family: arial;
+}
+header {
+  padding: 20px;
+  margin: 20px 0 10px 0; 
+  text-align: center;
+}
+main {
+  margin: 0 40px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  background: green;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+#all {
+  background: yellow;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+#online {
+  background: yellow;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+#offline {
+  background: yellow;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 5px 20px 5px 20px;
+}
+
+    #offCont {
+      margin: 10px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1frfr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+        "c1 c1 c1 c1"
+        "c2 c2 c3 c3";
+}
+
+
+@media screen and (min-width: 760px){
+    #offCont {
+      margin: 10px 0;
+      display: grid;
+      grid-template-columns: 250px 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "c1 c2 c3";
+  
+  }  
+}
+
+.d1 {
+  grid-area: c1;
+  border-radius: 10px;
+  background: white;
+  margin: 10px;
+}
+.d1 p {
+  display: flex;
+  align-items:center;
+}
+.d2 {
+  grid-area: c2;
+  color: black;
+  text-align:center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.d3 {
+  grid-area: c3;
+  border-radius: 10px;
+  margin: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neoGlow {
+  animation: glow 3000ms; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes glow {
+  0%{box-shadow: 0px 0px 1px rgb(9, 255, 0), 0 0 1px green inset;}
+  10%{box-shadow: 0px 0px 3px rgb(9, 255, 0), 0 0 3px green inset;}
+  20%{box-shadow: 0px 0px 6px rgb(9, 255, 0), 0 0 6px green inset;}
+  30%{box-shadow: 0px 0px 9px rgb(9, 255, 0), 0 0 9px green inset;}
+  40%{box-shadow: 0px 0px 12px rgb(9, 255, 0), 0 0 12pxgreen inset;}
+  50%{box-shadow: 0px 0px 15px rgb(9, 255, 0), 0 0 15px green inset;}
+  60%{box-shadow: 0px 0px 12x rgb(9, 255, 0), 0 0 12px green inset;}
+  70%{box-shadow: 0px 0px 9px rgb(9, 255, 0), 0 0 9px green inset;}
+  80%{box-shadow: 0px 0px 6px rgb(9, 255, 0), 0 0 6px green inset;}
+  90%{box-shadow: 0px 0px 3px rgb(9, 255, 0), 0 0 3px green inset;}
+  100%{box-shadow: 0px 0px 1px rgb(9, 255, 0), 0 0 1px green inset;}
+}
